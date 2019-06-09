@@ -1,5 +1,4 @@
 .vscode/
 a.out
-test.c
 libfts.a
 obj/
