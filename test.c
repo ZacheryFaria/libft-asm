@@ -61,6 +61,7 @@ void t_ft_striter()
 	memcpy(str, "Hello world", 12);
 	ft_striter(str, &upper);
 	ft_puts(str);
+	free(str);
 }
 
 void t_ft_cat()
@@ -84,6 +85,7 @@ void t_ft_memcpy()
 	char *s2 = ft_memcpy(s1, str, 16);
 	ft_puts(s2);
 	ft_memcpy(s1, str, 0);
+	free(s1);
 }
 
 void t_ft_memset()
@@ -93,8 +95,8 @@ void t_ft_memset()
 	char *s2 = ft_memset(str, 'a', 16);
 	assert(strcmp(str, "aaaaaaaaaaaaaaaa") == 0);
 	ft_puts(str);
-	free(str);
 	ft_memset(str, 'a', 0);
+	free(str);
 }
 
 void t_ft_strcat()
@@ -105,6 +107,7 @@ void t_ft_strcat()
 	str = ft_strcat(str, "world");
 	ft_puts(str);
 	assert(strcmp("Goodbye world", str) == 0);
+	free(str);
 }
 
 void t_ft_strlen()

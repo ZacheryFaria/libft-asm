@@ -23,5 +23,6 @@ int ft_abs(int num);
 char *ft_strjoin(char *s1, char *s2);
 int	ft_atoi(char *str);
 int	ft_fib(int n);
+int ft_fact(int n);
 
 #endif
